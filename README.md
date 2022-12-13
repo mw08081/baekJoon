@@ -7,15 +7,10 @@ baekJoon vsCode Cpp solution
 - MatheMatical  
   　
 - Linguistic  
-1008, 4344 - `cout.precision(streamsize)`, `cout << fixed`, `setprecisioin(streamsize)`  
-https://url.kr/n2grjf  
-10809 - `fill_n`  
-https://url.kr/b6jk1r  
-15552 - `ios::sync_with_stdio(false);`, `cin.tie(NULL);`, `cout.tie(NULL);`, ```endl VS '\n'```  
-https://url.kr/dv271f  
-15596 - `vector<T>` & `#include <vector>`    
-https://blog.naver.com/president304/222422474064  
-
+[1008, 4344 - `cout.precision(streamsize)`, `cout << fixed`, `setprecisioin(streamsize)`](https://github.com/mw08081/baekJoon/blob/main/README.md#1-%EC%B6%9C%EB%A0%A5-%EC%88%AB%EC%9E%90%EC%9D%98-%EC%9E%90%EB%A6%BF%EC%88%98-%EA%B3%A0%EC%A0%95)  
+[10809 - `fill_n`](https://github.com/mw08081/baekJoon#2-c-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%86%8D%EB%8F%84-%EB%8B%A8%EC%B6%95)  
+[15552 - `ios::sync_with_stdio(false);`, `cin.tie(NULL);`, `cout.tie(NULL);`, ```endl VS '\n'```](https://github.com/mw08081/baekJoon#1-%EC%B6%9C%EB%A0%A5-%EC%88%AB%EC%9E%90%EC%9D%98-%EC%9E%90%EB%A6%BF%EC%88%98-%EA%B3%A0%EC%A0%95)  
+[15596 - `vector<T>` & `#include <vector>`](https://blog.naver.com/president304/222422474064)  
 
 # Special(onMyWay || Hard)
 2675 - Mine is O(n^2) not O(n^3) : M
