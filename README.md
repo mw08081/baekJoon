@@ -8,7 +8,7 @@ baekJoon vsCode Cpp solution
   　
 - Linguistic  
 1008, 4344 - `cout.precision(streamsize)`, `cout << fixed`, `setprecisioin(streamsize)`  
-https://github.com/mw08081/baekJoon/blob/main/README.md#1008
+https://github.com/mw08081/baekJoon/blob/main/README.md#1008--%EC%B6%9C%EB%A0%A5-%EC%88%AB%EC%9E%90%EC%9D%98-%EC%9E%90%EB%A6%BF%EC%88%98-%EA%B3%A0%EC%A0%95  
 10809 - `fill_n`    
 https://naver.com  
 15552 - `ios::sync_with_stdio(false);`, `cin.tie(NULL);`, `cout.tie(NULL);`, ```endl VS '\n'```  
