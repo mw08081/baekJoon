@@ -20,11 +20,17 @@ https://blog.naver.com/president304/222422474064
 # Special(onMyWay || Hard)
 2675 - Mine is O(n^2) not O(n^3) : M
 
-
-## 1008 : 출력 숫자의 자릿수 고정
+　  
+   　  
+      　  
+         　  
+            　  
+               　  　  
+                     
+## 출력 숫자의 자릿수 고정
 `cout.precision(), cout.precision(streamsize)`
 
-## 15552 : C++ 입출력 속도 단축  
+## C++ 입출력 속도 단축  
 
 ### 방법 1.
 ```c++
