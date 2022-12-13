@@ -8,8 +8,8 @@ baekJoon vsCode Cpp solution
   　
 - Linguistic  
 [1008, 4344 - `cout.precision(streamsize)`, `cout << fixed`, `setprecisioin(streamsize)`](https://github.com/mw08081/baekJoon/blob/main/README.md#1-%EC%B6%9C%EB%A0%A5-%EC%88%AB%EC%9E%90%EC%9D%98-%EC%9E%90%EB%A6%BF%EC%88%98-%EA%B3%A0%EC%A0%95)  
-[10809 - `fill_n`](https://github.com/mw08081/baekJoon#2-c-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%86%8D%EB%8F%84-%EB%8B%A8%EC%B6%95)  
-[15552 - `ios::sync_with_stdio(false);`, `cin.tie(NULL);`, `cout.tie(NULL);`, ```endl VS '\n'```](https://github.com/mw08081/baekJoon#1-%EC%B6%9C%EB%A0%A5-%EC%88%AB%EC%9E%90%EC%9D%98-%EC%9E%90%EB%A6%BF%EC%88%98-%EA%B3%A0%EC%A0%95)  
+[10809 - `fill_n`](https://github.com/mw08081/baekJoon#3-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%95%9C-%EB%B2%88%EC%97%90-%EC%B1%84%EC%9A%B0%EA%B8%B0)  
+[15552 - `ios::sync_with_stdio(false);`, `cin.tie(NULL);`, `cout.tie(NULL);`, ```endl VS '\n'```](https://github.com/mw08081/baekJoon#2-c-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%86%8D%EB%8F%84-%EB%8B%A8%EC%B6%95)  
 [15596 - `vector<T>` & `#include <vector>`](https://blog.naver.com/president304/222422474064)  
 
 # Special(onMyWay || Hard)
