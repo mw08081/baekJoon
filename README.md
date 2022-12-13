@@ -12,7 +12,7 @@ https://url.kr/n2grjf
 10809 - `fill_n`  
 https://url.kr/b6jk1r  
 15552 - `ios::sync_with_stdio(false);`, `cin.tie(NULL);`, `cout.tie(NULL);`, ```endl VS '\n'```  
-https://github.com/mw08081/baekJoon-old-/blob/main/BAEKJOON/Q10989/README.md  
+https://url.kr/dv271f  
 15596 - `vector<T>` & `#include <vector>`    
 https://blog.naver.com/president304/222422474064  
 
