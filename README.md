@@ -27,10 +27,10 @@ https://blog.naver.com/president304/222422474064
             　  
                　  　  
                      
-## 출력 숫자의 자릿수 고정
+## 1. 출력 숫자의 자릿수 고정
 `cout.precision(), cout.precision(streamsize)`
 
-## C++ 입출력 속도 단축  
+## 2. C++ 입출력 속도 단축  
 
 ### 방법 1.
 ```c++
@@ -78,3 +78,10 @@ C++17	ios_base::sync_with_stdio(false); cout.tie(NULL); cout << i << '\n'; - 0.8
 + 참고자료 - https://leeeegun.tistory.com/4  
 + 참고자료 - https://www.acmicpc.net/blog/view/56 (입력속도)  
 + 참고자료 - https://www.acmicpc.net/blog/view/57 (출력속도)  
+
+## 3. 리스트 한 번에 채우기
+```c++
+int arr[100];
+
+fill_n(arr, 100, 0);        //fill_n(배열의 이름, 길이, 채우는 값)
+```
