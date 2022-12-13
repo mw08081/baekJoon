@@ -10,7 +10,7 @@ baekJoon vsCode Cpp solution
 1008, 4344 - `cout.precision(streamsize)`, `cout << fixed`, `setprecisioin(streamsize)`  
 https://github.com/mw08081/baekJoon-old-/tree/main/BAEKJOON/Q1008/README.md  
 10809 - `fill_n`    
-https://naver.com
+https://naver.com  
 15552 - `ios::sync_with_stdio(false);`, `cin.tie(NULL);`, `cout.tie(NULL);`, ```endl VS '\n'```  
 https://github.com/mw08081/baekJoon-old-/blob/main/BAEKJOON/Q10989/README.md  
 15596 - `vector<T>` & `#include <vector>`    
