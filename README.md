@@ -19,3 +19,8 @@ https://blog.naver.com/president304/222422474064
 
 ## Special(onMyWay || Hard)
 2675 - Mine is O(n^2) not O(n^3) : M
+
+
+### Study
+#### 1008
+`cout.precision(), cout.precision(streamsize)`
