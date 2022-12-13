@@ -27,7 +27,6 @@ https://blog.naver.com/president304/222422474064
 ## 15552 : C++ 입출력 속도 단축  
 
 ### 방법 1.
-1. 방법 1
 ```c++
 ios::sync_with_stdio(false);
 cin.tie(NULL);
