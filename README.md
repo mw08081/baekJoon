@@ -8,7 +8,8 @@ baekJoon vsCode Cpp solution
   　
 - Linguistic  
 [1008, 4344](https://github.com/mw08081/baekJoon/blob/main/README.md#1-%EC%B6%9C%EB%A0%A5-%EC%88%AB%EC%9E%90%EC%9D%98-%EC%9E%90%EB%A6%BF%EC%88%98-%EA%B3%A0%EC%A0%95) - `cout.precision(streamsize)`, `cout << fixed`, `setprecisioin(streamsize)`    
-[1152](www.naver.com) - `strtok(), getline(), cin.getline()`  
+[1152](www.naver.com) - `getline(), cin.getline()`  
+[1152](www.naver.com) - `strtok()`  
 [10809](https://github.com/mw08081/baekJoon#3-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%95%9C-%EB%B2%88%EC%97%90-%EC%B1%84%EC%9A%B0%EA%B8%B0) - `fill_n`  
 [15552](https://github.com/mw08081/baekJoon#2-c-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%86%8D%EB%8F%84-%EB%8B%A8%EC%B6%95) - `ios::sync_with_stdio(false);`, `cin.tie(NULL);`, `cout.tie(NULL);`, ```endl VS '\n'```  
 [15596](https://blog.naver.com/president304/222422474064) - `vector<T>` & `#include <vector>`  
@@ -30,9 +31,9 @@ baekJoon vsCode Cpp solution
                      
 ## 1. 출력 숫자의 자릿수 고정
 `cout.precision(), cout.precision(streamsize)`
-
+　  
+   
 ## 2. C++ 입출력 속도 단축  
-
 ### - 방법 1.
 ```c++
 ios::sync_with_stdio(false);
@@ -86,10 +87,43 @@ C++17	ios_base::sync_with_stdio(false); cout.tie(NULL); cout << i << '\n'; - 0.8
 + 참고자료 - https://leeeegun.tistory.com/4  
 + 참고자료 - https://www.acmicpc.net/blog/view/56 (입력속도)  
 + 참고자료 - https://www.acmicpc.net/blog/view/57 (출력속도)  
-
+　  
+   
 ## 3. 리스트 한 번에 채우기
 ```c++
 int arr[100];
 
 fill_n(arr, 100, 0);        //fill_n(배열의 이름, 길이, 채우는 값)
+```
+　  
+   
+## 4. 공백문자열 입력받기
+### - cin.getline()
+　  
+   
+### - getline()
+　  
+   
+## 5. 문자열 자르기  
+strtok()함수를 사용한다.
+
+```c++
+#include <iostream>
+#include <cstring>            //strtok()가 포함된 해더파일
+using namespace std;
+
+int main()
+{
+  char s[1000];
+  char * ptr;
+  
+  cin.getline(s, 1000);
+  
+  ptr = strtok(s, " ");
+  while(ptr != NULL)
+  {
+    ptr = strtok(NULL, " ");
+    cout << *ptr << '\n';
+  }
+}
 ```
