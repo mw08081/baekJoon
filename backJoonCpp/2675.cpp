@@ -18,3 +18,17 @@ int main()
         cout << '\n';
     }
 }
+
+//이 문제를 보자마자 파이썬이 생각났다
+//파이썬 코드는 아래와 같다
+
+/*
+t = int(input())
+
+for i in range(t):
+    time, s = input().split()
+
+    for j in range(len(s)):
+        print(int(time) * s[j], end = "")
+
+*/
