@@ -66,10 +66,10 @@ cout.tie(NULL);
 　  
    
 ### - std::endl과 '\n'의 차이
-백준문제 풀이과정에서 속도차이를 줄여도 시간초과가 나오는 경우가 있다.  
+백준문제 풀이과정에서 속도차이를 줄여도 시간초과가 나오는 경우가 있다    
 이때 << endl 대신 << '\n'을 사용해보자
 
-endl은 내부의 버퍼를 비워는 역할로 진행이 느리므로 '\n'을 써보면 시간이 단축될 수 있다.  
+endl은 내부의 버퍼를 비워는 역할로 진행이 느리므로 '\n'을 써보면 시간이 단축될 수 있다    
 　  
    
 ### - 입출력 속도 
@@ -100,15 +100,22 @@ fill_n(arr, 100, 0);        //fill_n(배열의 이름, 길이, 채우는 값)
 　  
    
 ## 4. 공백문자열 입력받기
-### - cin.getline()
+### - cin.getline()  
+`cin.getline(char* s, streamsize n)` 는 `iostream > istream`해더파일에 존재한다  
+주의할 점은 문자열 형태가 char * (char 형태의 배열) 이라는 점이다  
 　  
    
 ### - getline()
+`getline(&istream is, string& s)` 는 `string` 해더파일에 존재한다  
+cin.getline과 다르게 char* 가 아닌 string 객체에 입력을 받는다  
+
+### - 참고자료
+https://nomad-learner.github.io/study/2021/02/22/getline%EB%B9%84%EA%B5%90.html  
+
 　  
    
 ## 5. 문자열 자르기  
-strtok()함수를 사용한다.
-
+strtok()함수를 사용한다  
 ```c++
 #include <iostream>
 #include <cstring>            //strtok()가 포함된 해더파일
@@ -129,3 +136,14 @@ int main()
   }
 }
 ```
+근데 이 방법을 사용해도 문제를 해결할 수 없다(이유는 모름, 아마 채점 기준 변동아닐까..)  
+그래서 [이 곳](https://sossoon.tistory.com/24)을 참고하니 strtok()함수를 사용하여 문제를 해결할 수 있었다.
+
+참고자료
+- https://blockdmask.tistory.com/382  
+- https://coding-factory.tistory.com/592  
+- https://sossoon.tistory.com/24   
+　  
+   
+## 6. string to char *  
+`c_str()` 사용    
