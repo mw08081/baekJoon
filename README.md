@@ -10,6 +10,7 @@ baekJoon vsCode Cpp solution
 [1008, 4344](https://github.com/mw08081/baekJoon/blob/main/README.md#1-%EC%B6%9C%EB%A0%A5-%EC%88%AB%EC%9E%90%EC%9D%98-%EC%9E%90%EB%A6%BF%EC%88%98-%EA%B3%A0%EC%A0%95) - `cout.precision(streamsize)`, `cout << fixed`, `setprecisioin(streamsize)`    
 [1152](www.naver.com) - `getline(), cin.getline()`  
 [1152](www.naver.com) - `strtok()`  
+[1152]() - `c_str()`  
 [10809](https://github.com/mw08081/baekJoon#3-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%95%9C-%EB%B2%88%EC%97%90-%EC%B1%84%EC%9A%B0%EA%B8%B0) - `fill_n`  
 [15552](https://github.com/mw08081/baekJoon#2-c-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%86%8D%EB%8F%84-%EB%8B%A8%EC%B6%95) - `ios::sync_with_stdio(false);`, `cin.tie(NULL);`, `cout.tie(NULL);`, ```endl VS '\n'```  
 [15596](https://blog.naver.com/president304/222422474064) - `vector<T>` & `#include <vector>`  
@@ -30,9 +31,9 @@ baekJoon vsCode Cpp solution
                　  　  
                      
 ## 1. 출력 숫자의 자릿수 고정
-`cout.precision(), cout.precision(streamsize)`
+`cout.precision(), cout.precision(streamsize)`  
 　  
-   
+     
 ## 2. C++ 입출력 속도 단축  
 ### - 방법 1.
 ```c++
@@ -50,9 +51,9 @@ cout.tie(NULL);
 다만 이 코드를 이용하려면 단일스레드 환경이어야 하며, c 방식의 입출력(printf(), getchar())를 사용할 수 없다고 한다  
 
 #2 `cin.tie(NULL);`, `cout.tie(NULL);`  
-참고자료를 읽어볼 것(정확히 정리가 안됨)  
+참고자료를 읽어볼 것(정확히 정리가 안됨)   
 　  
-   
+     
 ### - 방법 2.
 ```
 #include <cstdio>
@@ -62,7 +63,8 @@ cout.tie(NULL);
   scanf("%d", &num);
   printf("%d\n");
 ```
-
+　  
+   
 ### - std::endl과 '\n'의 차이
 백준문제 풀이과정에서 속도차이를 줄여도 시간초과가 나오는 경우가 있다.  
 이때 << endl 대신 << '\n'을 사용해보자
@@ -119,10 +121,10 @@ int main()
   
   cin.getline(s, 1000);
   
-  ptr = strtok(s, " ");
+  ptr = strtok(s, " ");             //strtok(char * s, const char * delimiter) : string이 아닌 char * 인점 주의할 것
   while(ptr != NULL)
   {
-    ptr = strtok(NULL, " ");
+    ptr = strtok(NULL, " ");        //한 번 입력된 문자열을 계속해서 진행하므로 문자열엔 NULL 입력
     cout << *ptr << '\n';
   }
 }
