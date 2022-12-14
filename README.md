@@ -122,7 +122,7 @@ int main()
   cin.getline(s, 1000);
   
   ptr = strtok(s, " ");             //strtok(char * s, const char * delimiter) : string이 아닌 char * 인점 주의할 것
-  while(ptr != NULL)
+  while(ptr != NULL)                //strtok()는 마지막에 도달하면 NULL을 반환함
   {
     ptr = strtok(NULL, " ");        //한 번 입력된 문자열을 계속해서 진행하므로 문자열엔 NULL 입력
     cout << *ptr << '\n';
