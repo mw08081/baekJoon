@@ -11,28 +11,26 @@ bool GetIsRedundant(vector<char> &log, char _c)
 
 int main()
 {
-    vector<char> log;
-    char c;
-    string s;
+    int t, cnt = 0, i;
 
-    cin >> s;
-
-    int i;
-    for (i = 1; i < s.length(); i++)
+    cin >> t;
+    for (int j = 0; j < t; j++)
     {
-        if(s[i] != s[i - 1])
+        vector<char> log;
+        string s;
+        char c = 0;
+        cin >> s;
+
+        if(s.length() >= 1) { log.push_back(s[0]); }
+        for (i = 1; i < s.length(); i++)
         {
-            if(GetIsRedundant(log, s[i - 1]) == true)
-                break;
-            else
+            if(s[i - 1] != s[i])
             {
-                log.push_back(s[i-1]);
-                cout << s[i - 1] << " " << i << endl;
+                if(GetIsRedundant(log, s[i])) { break; }
+                else { log.push_back(s[i]); }
             }
-                
         }
-        
+        if(i == s.length()) { cnt++; }
     }
-    if(i == s.length() - 1) {cout << i << endl;}
-    
+    cout << cnt;
 }
