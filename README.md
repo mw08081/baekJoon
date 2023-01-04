@@ -7,6 +7,7 @@
 - Algorithmic   
 　  
 - MatheMatical  
+[2292]() - 계차수열 일반항 공식  
   　
 - Linguistic  
 [1008, 4344](https://github.com/mw08081/baekJoon/blob/main/README.md#1-%EC%B6%9C%EB%A0%A5-%EC%88%AB%EC%9E%90%EC%9D%98-%EC%9E%90%EB%A6%BF%EC%88%98-%EA%B3%A0%EC%A0%95) - `cout.precision(streamsize)`, `cout << fixed`, `setprecisioin(streamsize)`    
@@ -247,3 +248,6 @@ int main()
    
 ## 6. string to char *  
 `c_str()` 사용(나중에 공부하자..)  
+　  
+   
+## 6. 계차수열
