@@ -1,5 +1,7 @@
 # baekJoon
 baekJoon vsCode Cpp solution
+환경 구축(cpp) : https://stg0123.github.io/study/5/  
+환경 구축(python) : Edit code runner Executor Map >> "python3(mac) || py(win) -u"(터미널/cmd에서 python이 실행되느 이름)  
 
 # helped
 - Algorithmic   
