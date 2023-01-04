@@ -3,19 +3,13 @@ using namespace std;
 
 int main()
 {
-    int n, res, cnt = 0, i = 1;
+    int n, normal = 0, i = 0;
     cin >> n;
-    res = (n - 1) / 6;
 
-    if(res == 0) { cout << 1; }
-    else
+    while(normal < n)
     {
-        while(res >= i)
-        {
-            res -= i++;
-            cout << res << endl;
-        }
-            
-        cout << i + 1; 
+        i++;
+        normal = 3 * i * i - 3 * i + 1; //3x^2 - 3x + 1
     }
+    cout << i;
 }
