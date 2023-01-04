@@ -1,7 +1,7 @@
-# baekJoon
-baekJoon vsCode Cpp solution  
-환경 구축(cpp) : https://stg0123.github.io/study/5/  
-환경 구축(python) : Edit code runner Executor Map >> "python3(mac) || py(win) -u"(터미널/cmd에서 python이 실행되는 이름)  
+# baekJoon 
+환경구축 : Edit code runner Executor Map
+  - cpp : ["cpp": "cd $dir && g++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"](https://stg0123.github.io/study/5/)  
+  - python : "python3(mac) || py(win) -u"(터미널/cmd에서 python이 실행되는 이름)  
 
 # helped
 - Algorithmic   
