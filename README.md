@@ -252,8 +252,8 @@ int main()
 　  
    
 ## 7. 계차수열
-![계차수열](https://user-images.githubusercontent.com/58582985/211246029-189c71c2-4ef9-4898-be0e-55a8031b5d47.png)  
-(단, b_n은 계차수열의 
+![image](https://user-images.githubusercontent.com/58582985/211246443-aecfeeab-00b8-4399-9c32-ed42b159e08c.png)  
+(단, b_n은 계차수열의 a_n수열의 등차수열 일반항)  
   　  
    
 ## 8. 올림, 내림  
