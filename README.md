@@ -261,5 +261,5 @@ int main()
 double ceil(double val);
 double floor(double val);
   
-double ceil(double val + 0.5f);
+double ceil(double val + 0.5f);     //반올림
 ```
