@@ -14,7 +14,7 @@
 [`getline(); cin.getline();`](https://github.com/mw08081/baekJoon/blob/main/README.md#4-%EA%B3%B5%EB%B0%B1%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%9E%85%EB%A0%A5%EB%B0%9B%EA%B8%B0)  
 [`strtok();`](https://github.com/mw08081/baekJoon/blob/main/README.md#5-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%9E%90%EB%A5%B4%EA%B8%B0)    
 [`c_str();`](https://github.com/mw08081/baekJoon/blob/main/README.md#6-string-to-char-)  
-[`ceil(); floor();`]()     
+[`ceil(); floor();`](https://github.com/mw08081/baekJoon/blob/main/README.md#8-올림-내림)      
 [`fill_n()`](https://github.com/mw08081/baekJoon#3-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%ED%95%9C-%EB%B2%88%EC%97%90-%EC%B1%84%EC%9A%B0%EA%B8%B0)  
 [`ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);` & `endl VS '\n'`](https://github.com/mw08081/baekJoon#2-c-%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%86%8D%EB%8F%84-%EB%8B%A8%EC%B6%95)   
 [`vector<T>` & `#include <vector>`](https://blog.naver.com/president304/222422474064)   
