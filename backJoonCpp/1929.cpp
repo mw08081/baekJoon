@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//wtb(worse than before)
 int main()
 {
     int m, n, arr[1000001] = {1, 1};
