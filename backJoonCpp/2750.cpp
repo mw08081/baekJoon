@@ -11,6 +11,15 @@ void Swap(int * n1, int * n2)
     *n2 = tmp;
 }
 
+void Print()
+{
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+    
+}
+
+#pragma region otherSortingAlgo
 void BubbleSort()
 {
     for (int i = n - 1; i > 0; i--)
@@ -48,25 +57,50 @@ void InsertionSort()
         arr[j+1] = tmp;
     }
 }
+#pragma endregion
 
-void RightPviotQuickSort(int i, int j) //pIdx == pivot Index
+void RightPivotQuickSort(int l, int r) 
 {
-    int pIdx = j+1, orgI = i;
-    if(i >= j) {return;}
+    int pIdx = r;
+    int i = l, j = r - 1;
+    if(l >= r) {return;}
+
+    while(i <= j)
+    {
+        while(arr[pIdx] > arr[i] && i <= j) i++;
+        while(arr[pIdx] < arr[j] && i <= j) j--;
+
+        if(i <= j)
+        {
+            Swap(&arr[i], &arr[j]);
+        }
+    }
+    Swap(&arr[pIdx], &arr[i]);
+
+    RightPivotQuickSort(l, i - 1);
+    RightPivotQuickSort(i + 1, r);
+}
+
+void LeftPivotQuickSort(int l, int r)
+{
+    int p = l;
+    int i = l + 1;
+    int j = r;
+
+    if(i > j) {return;}
 
     while(i < j)
     {
-        if(arr[i] > arr[pIdx] && arr[j] < arr[pIdx])
-            Swap(&arr[i++], &arr[j--]);
-        else if(arr[i] < arr[pIdx])
-            i++;
-        else if(arr[j] > arr[pIdx])
-            j--;
-    }
-    Swap(&arr[i], &arr[pIdx]);
+        while(arr[p] > arr[i] && i < r) i++;
+        while(arr[p] < arr[j] && j > l) j--;
 
-    RightPviotQuickSort(orgI, i-2);
-    RightPviotQuickSort(i+1, pIdx-1);
+        if(i < j)
+            Swap(&arr[i], &arr[j]);    
+    }
+    Swap(&arr[p], &arr[j]);
+
+    LeftPivotQuickSort(l, j - 1);
+    LeftPivotQuickSort(j + 1, r);
 }
 
 int main()
@@ -79,8 +113,9 @@ int main()
     //BubbleSort();
     //SelectionSort();
     //InsertionSort();
-    RightPviotQuickSort(0, n-2);       //pivot == end
-    //QuickSort(0, 1, n);         //pivot == start
+    
+    RightPivotQuickSort(0, n - 1);       //pivot == end
+    //LeftPivotQuickSort(0, n - 1);         //pivot == start
     //QuickSort(n/2, 0, n);       //pivot == mid
 
     
