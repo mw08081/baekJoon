@@ -83,18 +83,17 @@ void RightPivotQuickSort(int l, int r)
 
 void LeftPivotQuickSort(int l, int r)
 {
+    if(l >= r) { return; }
+
     int p = l;
     int i = l + 1;
     int j = r;
-
-    if(i > j) {return;}
-
-    while(i < j)
+    while(i <= j)
     {
-        while(arr[p] > arr[i] && i < r) i++;
-        while(arr[p] < arr[j] && j > l) j--;
+        while(arr[p] >= arr[i] && i <= j) i++;
+        while(arr[p] <= arr[j] && i <= j) j--;
 
-        if(i < j)
+        if(i <= j)
             Swap(&arr[i], &arr[j]);    
     }
     Swap(&arr[p], &arr[j]);
@@ -102,6 +101,34 @@ void LeftPivotQuickSort(int l, int r)
     LeftPivotQuickSort(l, j - 1);
     LeftPivotQuickSort(j + 1, r);
 }
+
+// 피벗의 위치가 변하지 않는 lPivot, rPivot quickSort는 문제되지 않지만
+// 피벗의 위치가 변하는 midPivot의 경우 문제가 발생한다.. 
+// 그러니 애초에 피벗인데스가 아닌 피벗값과 비교하며,, 이를 적용해도 lPivot, rPivot quickSort 는 문제되지 않으니
+// 나머지도 pIdx가 아닌 pivot 으로 비교하여 통일성을 주는 것이 좋을 듯하다
+void MidPivotQuickSort(int l, int r)
+{
+    if(l >= r) { return; }
+
+    int i = l, j = r;
+    int p = arr[(l + r) / 2];
+
+    /* partition */
+    while (i <= j) {
+        while (arr[i] < arr[p])  i++;
+        while (arr[j] > arr[p])  j--;
+
+        if (i <= j) {
+            Swap(&arr[i++], &arr[j--]);
+        }
+    }
+    Print();
+    cout << i << " " << j << endl;
+    
+    MidPivotQuickSort(l, j);
+    MidPivotQuickSort(i, r);
+}
+
 
 int main()
 {
@@ -114,9 +141,9 @@ int main()
     //SelectionSort();
     //InsertionSort();
     
-    RightPivotQuickSort(0, n - 1);       //pivot == end
-    //LeftPivotQuickSort(0, n - 1);         //pivot == start
-    //QuickSort(n/2, 0, n);       //pivot == mid
+    //RightPivotQuickSort(0, n - 1);       //pivot == end
+    LeftPivotQuickSort(0, n - 1);         //pivot == start
+    //MidPivotQuickSort(0, n - 1);       //pivot == mid
 
     
     for (int i = 0; i < n; i++)
