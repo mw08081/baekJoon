@@ -7,21 +7,21 @@
 - Algorithmic   
 　  
 - MatheMatical  
-[계차수열 일반항 공식](https://github.com/mw08081/baekJoon#7-계차수열)     
+  - [계차수열 일반항 공식](https://github.com/mw08081/baekJoon#7-계차수열)     
   　
 - Linguistic  
-[`cout.precision(streamsize); cout << fixed; setprecisioin(streamsize);`](https://github.com/mw08081/baekJoon#1-출력-숫자의-자릿수-고정)     
-[`ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);` & `endl VS '\n'`](https://github.com/mw08081/baekJoon#2-c-입출력-속도-단축)   
-[`fill_n()`](https://github.com/mw08081/baekJoon#3-리스트-한-번에-채우기)  
-[`getline(); cin.getline();`](https://github.com/mw08081/baekJoon#4-공백문자열-입력받기)  
-[`strtok();`](https://github.com/mw08081/baekJoon#5-문자열-자르기)    
-[`c_str();`](https://github.com/mw08081/baekJoon#6-string-to-char-)  
-[`ceil(); floor();`](https://github.com/mw08081/baekJoon/blob/main/README.md#8-올림-내림)      
-[`vector<T>` & `#include <vector>`](https://blog.naver.com/president304/222422474064)   
+  - [`cout.precision(streamsize); cout << fixed; setprecisioin(streamsize);`](https://github.com/mw08081/baekJoon#1-출력-숫자의-자릿수-고정)     
+  - [`ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);` & `endl VS '\n'`](https://github.com/mw08081/baekJoon#2-c-입출력-속도-단축)   
+  - [`fill_n()`](https://github.com/mw08081/baekJoon#3-리스트-한-번에-채우기)  
+  - [`getline(); cin.getline();`](https://github.com/mw08081/baekJoon#4-공백문자열-입력받기)  
+  - [`strtok();`](https://github.com/mw08081/baekJoon#5-문자열-자르기)    
+  - [`c_str();`](https://github.com/mw08081/baekJoon#6-string-to-char-)  
+  - [`ceil(); floor();`](https://github.com/mw08081/baekJoon/blob/main/README.md#8-올림-내림)      
+  - [`vector<T>` & `#include <vector>`](https://blog.naver.com/president304/222422474064)   
 
 # Special(onMyWay || Hard)
 - OnMyWay  
-[2675](https://github.com/mw08081/baekJoon/blob/main/backJoonCpp/2675.cpp) - O(n^2) not O(n^3)
+  - [2675](https://github.com/mw08081/baekJoon/blob/main/backJoonCpp/2675.cpp) - O(n^2) not O(n^3)
 
 - Hard  
 
