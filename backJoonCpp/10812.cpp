@@ -42,7 +42,6 @@ int main()
         v.push_back(i);
 
     cin >> n >> m;
-
     while(m--)
     {
         cin >> i >> j >> k;
