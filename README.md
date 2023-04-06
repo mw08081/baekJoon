@@ -266,7 +266,7 @@ double ceil(double val + 0.5f);     //반올림
 ```
 
 ## 9. 배열 회전
-`#include <algorithm>`에 rotate라는 함수가 있다
+`#include <algorithm>`에 rotate라는 함수가 있다. 
 iterable 객체를 넣어서 회전하는데 방법과 결과는 다음과 같다 
 ```c++
 ```
