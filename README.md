@@ -18,6 +18,7 @@
   - [`strtok();`](https://github.com/mw08081/baekJoon#5-문자열-자르기)    
   - [`c_str();`](https://github.com/mw08081/baekJoon#6-string-to-char-)  
   - [`ceil(); floor();`](https://github.com/mw08081/baekJoon/blob/main/README.md#8-올림-내림)      
+  - [`rotate(st, mid, fin)`](https://github.com/mw08081/baekJoon/blob/main/README.md#9-배열-회전)
 
 # Special(onMyWay || Hard)
 - OnMyWay  
@@ -262,4 +263,10 @@ double ceil(double val);
 double floor(double val);
   
 double ceil(double val + 0.5f);     //반올림
+```
+
+## 9. 배열 회전
+`#include <algorithm>`에 rotate라는 함수가 있다  
+iterable 객체를 넣어서 회전하는데 방법과 결과는 다음과 같다 
+```c++
 ```
