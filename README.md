@@ -19,6 +19,8 @@
   - [`c_str();`](https://github.com/mw08081/baekJoon#6-string-to-char-)  
   - [`ceil(); floor();`](https://github.com/mw08081/baekJoon/blob/main/README.md#8-올림-내림)      
   - [`rotate(st, mid, fin);`](https://github.com/mw08081/baekJoon/blob/main/README.md#9-배열-회전)
+  - [`reverse();`]()
+  - [`stoi, stof, stol, stod && strtol, strtoul, strtod`]()
 
 # Special(onMyWay || Hard)
 - OnMyWay  
