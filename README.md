@@ -22,7 +22,7 @@
   - [`rotate(st, mid, fin);`](https://github.com/mw08081/baekJoon/blob/main/README.md#9-배열-회전)
   - [`reverse();`]()
   - [`stoi, stof, stol, stod && strtol, strtoul, strtoll, strtoull, strtod`]()
-  - numeric accumulate
+  - numeric accumulate, std::multiplies<int>()
   - map
   - list
   - 
