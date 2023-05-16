@@ -22,10 +22,13 @@ int main()
                     st.push(')');
                     break;
                 }
-                st.pop();
+                else
+                {
+                    st.pop();
+                }
             }
         }
         
-        cout << (st.empty() ? "YES" : "NO");
+        cout << (st.empty() ? "YES" : "NO") << '\n';
     }
 }
