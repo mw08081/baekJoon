@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-    
     string s;
     int t;
     cin >> t;
@@ -22,13 +21,9 @@ int main()
                     st.push(')');
                     break;
                 }
-                else
-                {
-                    st.pop();
-                }
+                else st.pop();
             }
         }
-        
         cout << (st.empty() ? "YES" : "NO") << '\n';
     }
 }
