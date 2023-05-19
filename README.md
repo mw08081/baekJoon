@@ -30,7 +30,7 @@
 # Special(onMyWay || Hard)
 - OnMyWay  
   - [2675](https://github.com/mw08081/baekJoon/blob/main/backJoonCpp/2675.cpp) - O(n^2) not O(n^3)
-  - [10845]() - using list (| vector) not vector
+  - [10845]() - using list (| vector) not Queue
 - Hard  
 
 - Both  
