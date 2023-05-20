@@ -4,6 +4,10 @@ using namespace std;
 
 int main()
 {
+    ios::sync_with_stdio(false);
+    cout.tie(NULL);
+    cin.tie(NULL);
+    
     queue<int> q;
     int c, i; //cnt, idx
     cin >> c >> i;
@@ -11,15 +15,16 @@ int main()
     for (int j = 1; j <= c; j++)
         q.push(j);
     
-    while(q.empty() == false)
+    cout << "<";
+    while(!q.empty())
     {
         for (int j = 0; j < i-1; j++)
         {
             q.push(q.front());
             q.pop();
         }
+        cout << q.front() << ((q.size() != 1) ? ", " : "");
         q.pop();
     }
-    for(auto e : q)
-        cout << e << " ";
+    cout << ">";
 }
