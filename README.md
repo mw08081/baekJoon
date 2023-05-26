@@ -308,8 +308,8 @@ reverse(v.begin(), v.end());          //6 5 4 1 2 3
    
 ## 11. 데이터 타입 변경하기(문자열 2 ...)
 구글링을 하다보니 strtol 함수보다 stoi 부류의 함수를 권장한다고 한다  
-현재 내가 보기엔 strtol은 char*를 매개변수로 받지만, stoi는 string을 받아온다  
-다만, stoi에도 char*를 인잘 받는 오버로딩이 있는 듯하다.  
+현재 내가 보기엔 strtol은 `char*`를 매개변수로 받지만, stoi는 `string`을 받아온다  
+다만, stoi에도 `char*`를 인자로 받는 오버로딩이 있는 듯하다.  
 ```c++
 long      strtol( const char* str, char** str_end, int base );
 
