@@ -287,6 +287,7 @@ ForwardIt rotate( ForwardIt first, ForwardIt middle, ForwardIt last );
 vecotr<int> v {1,2,3,4,5,6};
 rotate(v.begin(), v.begin()+2, v.end());    //3 4 5 6 1 2
 ```
+참고자료 - https://en.cppreference.com/w/cpp/algorithm/rotate
    
    
 ## 10. 배열 뒤집기
@@ -299,6 +300,23 @@ void reverse( BidirIt first, BidirIt last );
 #include <algorithm>
 vector<int> v {1,2,3,4,5,6};
 
-reverse(v.begin(), v.begin()+3);
-reverse(v.begin(), v.end());  
+reverse(v.begin(), v.begin()+3);      //3 2 1 4 5 6
+reverse(v.begin(), v.end());          //6 5 4 1 2 3
+```
+참고자료 - https://en.cppreference.com/w/cpp/algorithm/reverse
+   
+   
+## 11. 데이터 타입 변경하기(문자열 2 ...)
+구글링을 하다보니 strtol 함수보다 stoi 부류의 함수를 권장한다고 한다  
+현재 내가 보기엔 strtol은 char*를 매개변수로 받지만, stoi는 string을 받아온다  
+다만, stoi에도 char*를 인잘 받는 오버로딩이 있는 듯하다.  
+```c++
+long      strtol( const char* str, char** str_end, int base );
+
+long      stol( const std::string& str, std::size_t* pos = nullptr, int base = 10 );
+int       stoi( const std::string& str, std::size_t* pos = nullptr, int base = 10 );
+
+int       atoi( const char* str );
+```
+```c++  
 ```
