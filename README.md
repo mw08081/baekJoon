@@ -318,5 +318,8 @@ int       stoi( const std::string& str, std::size_t* pos = nullptr, int base = 1
 
 int       atoi( const char* str );
 ```
-```c++  
-```
+- 참고자료
+  - https://en.cppreference.com/w/cpp/string/basic_string/stol
+  - https://en.cppreference.com/w/cpp/string/byte/atoi
+  - https://en.cppreference.com/w/cpp/string/byte/strtol
+  - https://stackoverflow.com/questions/19259883/what-are-the-differences-between-stdstrtol-and-stdstoi
