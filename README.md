@@ -5,6 +5,8 @@
 
 # helped
 - Algorithmic   
+  - [1011](https://www.acmicpc.net/problem/1011)
+  - [17298](https://www.acmicpc.net/problem/17298)
 　  
 - MatheMatical  
   - [계차수열 일반항 공식](https://github.com/mw08081/baekJoon#7-계차수열)     
@@ -20,7 +22,7 @@
   - [`c_str();`](https://github.com/mw08081/baekJoon#6-string-to-char-)  
   - [`ceil(); floor();`](https://github.com/mw08081/baekJoon/blob/main/README.md#8-올림-내림)      
   - [`rotate(st, mid, fin);`](https://github.com/mw08081/baekJoon/blob/main/README.md#9-배열-회전)
-  - [`reverse();`]()
+  - [`reverse();`](https://github.com/mw08081/baekJoon/blob/main/README.md#9-배열-뒤집기)
   - [`stoi, stof, stol, stod && strtol, strtoul, strtoll, strtoull, strtod`]()
   - numeric accumulate, std::multiplies<int>()
   - map
@@ -271,9 +273,32 @@ double floor(double val);
   
 double ceil(double val + 0.5f);     //반올림
 ```
-
+   
+   
 ## 9. 배열 회전
-`#include <algorithm>`에 rotate라는 함수가 있다. 
-iterable 객체를 넣어서 회전하는데 방법과 결과는 다음과 같다 
+rotate는 iterable 객체를 회전시켜준다. 간단학 두번째 인자를 가장 앞으로 가져온다고 보면된다.
 ```c++
+template< class ForwardIt >
+ForwardIt rotate( ForwardIt first, ForwardIt middle, ForwardIt last );
+```
+```c++
+#include <algorithm>
+
+vecotr<int> v {1,2,3,4,5,6};
+rotate(v.begin(), v.begin()+2, v.end());    //3 4 5 6 1 2
+```
+   
+   
+## 10. 배열 뒤집기
+reverse()는 iterable 객체의 특정 구간을 뒤집는다. 마지막 인자 직전까지 뒤집힌 주의하자
+```c++
+template< class BidirIt >
+void reverse( BidirIt first, BidirIt last );
+```
+```c++  
+#include <algorithm>
+vector<int> v {1,2,3,4,5,6};
+
+reverse(v.begin(), v.begin()+3);
+reverse(v.begin(), v.end());  
 ```
