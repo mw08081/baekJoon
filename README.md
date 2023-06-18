@@ -11,7 +11,7 @@
 - MatheMatical  
   - [계차수열 일반항 공식](https://github.com/mw08081/baekJoon#7-계차수열)     
   - 등비수열 등차수열 합
-  　
+  　 
 - Linguistic  
   - [`vector<T>` & `#include <vector>`](https://blog.naver.com/president304/222422474064)   
   - [`cout.precision(streamsize); cout << fixed; setprecisioin(streamsize);`](https://github.com/mw08081/baekJoon#1-출력-숫자의-자릿수-고정)     
