@@ -1,5 +1,5 @@
 # baekJoon 
-환경구축 : Edit code runner Executor Map
+환경구축 : Edit code runner Executor Map 
   - cpp : ["cpp": "cd $dir && g++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"](https://stg0123.github.io/study/5/)  
   - python : ["python3(mac) || py(win) -u"](https://soooprmx.com/run-python-in-command-line-on-windows/) 
 
