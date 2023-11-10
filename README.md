@@ -15,7 +15,7 @@
 - Linguistic  
   - [STL::vector](https://blog.naver.com/president304/222422474064)
   - [STL::map](https://blog.naver.com/president304/223261515398)
-  - [list]() 
+  - [STL::list]() 
   - [`cout.precision(streamsize); cout << fixed; setprecisioin(streamsize);`](https://github.com/mw08081/baekJoon#1-출력-숫자의-자릿수-고정)     
   - [`ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);` & `endl VS '\n'`](https://github.com/mw08081/baekJoon#2-c-입출력-속도-단축)   
   - [`fill_n()`](https://github.com/mw08081/baekJoon#3-리스트-한-번에-채우기)  
