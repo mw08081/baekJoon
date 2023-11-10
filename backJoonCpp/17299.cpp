@@ -1,46 +1,39 @@
-#include <iostream>
-#include <vector>
 #include <stack>
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    cout.tie(NULL);
-    cin.tie(NULL);
     ios::sync_with_stdio(false);
+    std::cout.tie(NULL);
+    std::cin.tie(NULL);
 
-    int t, v;
-    int arr[1000001];
-    int app[1000001];
-    vector<int> ans(1000001);
+    stack<int> s;
+    int n, v;
+    int seq[1000001];
+    int ans[1000001];
+    int* t = new int[1000001];
+    fill_n(t, 1000001, 0);
 
-    cin >> t;
-    for (int i = 1; i <= t; i++)
+    cin >> n;
+    for (int i = 1; i <= n; i++)
     {
         cin >> v;
-        arr[i] = v;
+        seq[i] = v;
+        t[v]++;
     }
-    for (int i = 1; i <= t; i++)
-        app[arr[i]]++;
-    
-    stack<int> stApp;
-    stack<int> stArr;
-    for (int i = t; i >= 0; i--)
+
+    for (int i = n; i > 0; i--)
     {
-        while(!stApp.empty() && stApp.top() <= app[arr[i]]) 
-        {
-            stApp.pop();
-            stArr.pop();
-        }
+        while(!s.empty() && t[seq[i]] >= t[s.top()])  s.pop();
 
-        if(stArr.empty()) ans[i] = -1;
-        else ans[i] = stArr.top();
+        if(s.empty()) ans[i] = -1;
+        else ans[i] = s.top();
 
-        stApp.push(app[arr[i]]);
-        stArr.push(arr[i]);
+        s.push(seq[i]);
     }
     
-    for (int i = 1; i < t; i++)
+    for (int i = 1; i < n; i++)
         cout << ans[i] << " ";
     cout << -1;
 }
