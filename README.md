@@ -25,7 +25,7 @@
   - [`reverse();`](https://github.com/mw08081/baekJoon/blob/main/README.md#10-배열-뒤집기)
   - [`stoi, stof, stol, stod && strtol, strtoul, strtoll, strtoull, strtod`](https://github.com/mw08081/baekJoon/blob/main/README.md#11-데이터-타입-변경하기문자열-2-)
   - [numeric accumulate, std::multiplies<int>()]()
-  - [map]()
+  - [map](https://blog.naver.com/president304/223261515398)
   - [list]()
   - 
 
