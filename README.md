@@ -13,7 +13,9 @@
   - 등비수열 등차수열 합
   　 
 - Linguistic  
-  - [`vector<T>` & `#include <vector>`](https://blog.naver.com/president304/222422474064)   
+  - [STL::vector](https://blog.naver.com/president304/222422474064)
+  - [STL::map](https://blog.naver.com/president304/223261515398)
+  - [list]() 
   - [`cout.precision(streamsize); cout << fixed; setprecisioin(streamsize);`](https://github.com/mw08081/baekJoon#1-출력-숫자의-자릿수-고정)     
   - [`ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);` & `endl VS '\n'`](https://github.com/mw08081/baekJoon#2-c-입출력-속도-단축)   
   - [`fill_n()`](https://github.com/mw08081/baekJoon#3-리스트-한-번에-채우기)  
@@ -25,9 +27,7 @@
   - [`reverse();`](https://github.com/mw08081/baekJoon/blob/main/README.md#10-배열-뒤집기)
   - [`stoi, stof, stol, stod && strtol, strtoul, strtoll, strtoull, strtod`](https://github.com/mw08081/baekJoon/blob/main/README.md#11-데이터-타입-변경하기문자열-2-)
   - [numeric accumulate, std::multiplies<int>()]()
-  - [map](https://blog.naver.com/president304/223261515398)
-  - [list]()
-  - 
+  
 
 # Special(onMyWay || Hard)
 - OnMyWay  
