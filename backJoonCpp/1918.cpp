@@ -17,7 +17,7 @@ int main()
             }
             else if(e == '(') s.push(e);
             else if(e == ')') {
-                while(s.top() == '(') {
+                while(s.top() != '(') {
                     if(s.top() != '(') cout << s.top();
                     s.pop();
                 }
