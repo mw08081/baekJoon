@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stack>
+#include <string>
 
 using namespace std;
 
@@ -17,14 +18,15 @@ int main()
             }
             else if(e == '(') s.push(e);
             else if(e == ')') {
-                while(s.top() != '(') {
-                    if(s.top() != '(') cout << s.top();
+                while(!s.empty() && s.top() != '(') {
+                    cout << s.top();
                     s.pop();
                 }
+                s.pop();
             }
             else if(e == '*' || e == '/') {
-                while(s.top() != '(' && (s.top() == '*' || s.top() == '/')) {
-                    if(s.top() != '(') cout << s.top();
+                while(!s.empty() && (s.top() == '*' || s.top() == '/')) {
+                    cout << s.top();
                     s.pop();
                 }
                 s.push(e);
@@ -40,7 +42,7 @@ int main()
     }
     
     while(!s.empty()) {
-        if(s.top() != '(') cout << s.top();
+        cout << s.top();
         s.pop();
     }
 }
