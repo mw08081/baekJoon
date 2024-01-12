@@ -9,7 +9,7 @@
   - [17298](https://www.acmicpc.net/problem/17298)
 　  
 - MatheMatical  
-  - [계차수열 일반항 공식](https://github.com/mw08081/baekJoon#7-계차수열)     
+  - [계차수열 일반항 공식](https://github.com/mw08081/baekJoon#7-계차수열)      
   - 등비수열 등차수열 합
   　 
 - Linguistic  
