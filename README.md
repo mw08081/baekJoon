@@ -27,8 +27,8 @@
   - [`reverse();`](https://github.com/mw08081/baekJoon/blob/main/README.md#10-배열-뒤집기)
   - [`stoi, stof, stol, stod && strtol, strtoul, strtoll, strtoull, strtod`](https://github.com/mw08081/baekJoon/blob/main/README.md#11-데이터-타입-변경하기문자열-2-)
   - [numeric accumulate, std::multiplies<int>()]()
-  - [`substr(~)`]()
-  - [`sort(~)`]()
+  - [`substr(~)`](https://github.com/mw08081/baekJoon/blob/main/README.md#13-substr)
+  - [`sort(~)`](https://github.com/mw08081/baekJoon/blob/main/README.md#14-sort)
   
 
 # Special(onMyWay || Hard)
@@ -330,7 +330,8 @@ int       atoi( const char* str );
 ## 13. substr
 ```c++
 #include <string>
-basic_string substr( size_type pos = 0, size_type count = npos ) const;    // pos ~ n개(npos 시, pos ~)
+basic_string substr( size_type pos = 0, size_type count = npos ) const;
+// pos ~ n개(npos 시, pos ~)
 ```
 ```c++
 //example
