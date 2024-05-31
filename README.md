@@ -27,6 +27,8 @@
   - [`reverse();`](https://github.com/mw08081/baekJoon/blob/main/README.md#10-배열-뒤집기)
   - [`stoi, stof, stol, stod && strtol, strtoul, strtoll, strtoull, strtod`](https://github.com/mw08081/baekJoon/blob/main/README.md#11-데이터-타입-변경하기문자열-2-)
   - [numeric accumulate, std::multiplies<int>()]()
+  - [`substr(~)`](https://github.com/mw08081/baekJoon/blob/main/README.md#13-substr)
+  - [`sort(~)`](https://github.com/mw08081/baekJoon/blob/main/README.md#14-sort)
   
 
 # Special(onMyWay || Hard)
@@ -323,3 +325,36 @@ int       atoi( const char* str );
   - https://en.cppreference.com/w/cpp/string/byte/atoi
   - https://en.cppreference.com/w/cpp/string/byte/strtol
   - https://stackoverflow.com/questions/19259883/what-are-the-differences-between-stdstrtol-and-stdstoi
+
+## 12. numeric accumulate, std::multiplies<int>()
+## 13. substr
+```c++
+#include <string>
+basic_string substr( size_type pos = 0, size_type count = npos ) const;
+// pos ~ n개(npos 시, pos ~)
+```
+```c++
+//example
+#include <string>
+...
+string s = "baekjoon";
+for(int i = 0; i< s.length(); i++)
+        cout << s.substr(i)) << '\n';
+```
+## 14. sort
+```c++
+#include <algorithm>
+
+template< class RandomIt >
+void sort( RandomIt first, RandomIt last );
+
+template< class RandomIt, class Compare >
+void sort( RandomIt first, RandomIt last, Compare comp );
+```
+```c++
+//example
+#include <algorithm>
+...
+vector<string> ans = {"aa", "cc", "bb"};
+sort(ans.begin(), ans.end());
+```
