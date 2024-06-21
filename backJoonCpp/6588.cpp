@@ -14,7 +14,7 @@ int main()
     for(int i = 2; i <= MAX; i++)
         for(int j = 1; j*i < MAX; j++)
             if(isPrime[j*i] == 0)
-                isPrime[i*j] = 1;
+                isPrime[i*j] = 1; 
 
             
     for (int i = 2 ; i < 100; i++)
