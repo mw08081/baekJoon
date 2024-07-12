@@ -18,5 +18,6 @@ int main()
         a = r;
     }
 
-    cout << GCD(a, b) << endl;
+    r = GCD(a, b);
+    cout << r << '\n' << a * b / r;
 }
