@@ -21,9 +21,10 @@ int main()
         cin >> n;
         if(n==0)break;
 
-        int i = 3;
         bool hasAns = false;
-        while(i < n)
+        int i = 3;
+
+        for(int i = 3; i < n; i+=2)
         {
             if(!isPrime[i] && !isPrime[n-i])
             {
@@ -31,8 +32,8 @@ int main()
                 hasAns = true;
                 break;
             }
-            i+=2;
         }
+
         if(!hasAns)
             cout << "Goldbach's conjecture is wrong." << '\n';
     }
