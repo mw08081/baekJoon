@@ -9,20 +9,31 @@ int main()
     cout.tie(NULL);
 
     vector<int> isPrime(MAX);
-    int n;
+    int n=-1;
 
-    for(int i = 2; i <= MAX; i++)
-        for(int j = 1; j*i < MAX; j++)
-            if(isPrime[j*i] == 0)
+    isPrime[0] = isPrime[1] = 1;
+    for(int i = 2; i*i <= MAX; i++)
+        if(isPrime[i] == 0)
+            for(int j = 2; j*i < MAX; j++)
                 isPrime[i*j] = 1; 
 
-            
-    for (int i = 2 ; i < 100; i++)
-        if(isPrime[i] == 0)
-            cout << i << endl;
-    return 0;
-    cin >> n;
-    while(n--){
+    while(n){
+        cin >> n;
+        if(n==0)break;
 
+        int i = 3;
+        bool hasAns = false;
+        while(i < n)
+        {
+            if(!isPrime[i] && !isPrime[n-i])
+            {
+                cout << n << " = " << i << " + " << n - i << '\n';
+                hasAns = true;
+                break;
+            }
+            i+=2;
+        }
+        if(!hasAns)
+            cout << "Goldbach's conjecture is wrong." << '\n';
     }
 }
