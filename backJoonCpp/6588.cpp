@@ -22,7 +22,7 @@ int main()
         if(n==0)break;
 
         bool hasAns = false;
-        for(int i = 3; i < n; i+=2)
+        for(int i = 3; i <= n/2; i+=2)
         {
             if(!isPrime[i] && !isPrime[n-i])
             {
