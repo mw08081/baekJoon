@@ -7,6 +7,7 @@
 - Algorithmic    
   - [1011](https://www.acmicpc.net/problem/1011)
   - [17298](https://www.acmicpc.net/problem/17298)
+  - [1676](https://www.acmicpc.net/problem/1676)
 　  
 - MatheMatical  
   - [계차수열 일반항 공식](https://github.com/mw08081/baekJoon#7-계차수열)      
