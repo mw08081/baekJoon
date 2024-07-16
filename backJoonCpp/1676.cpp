@@ -1,21 +1,35 @@
 #include <iostream>
 using namespace std;
 
-double Fac(int i)
-{
-    if(i == 0) return 1;
-    else return i * Fac(i-1);
-}
-
 int main()
 {
-    // int n;
-    // cin >> n;
-    std::cout<<fixed;
-    cout.precision(0);
+    int n, x = 0, y = 0;
+    bool isPrime[501] = {0};
 
-    for(int i = 1; i < 500; i++)
+    isPrime[0] = isPrime[1] = true;
+    for(int i = 2; i*i < 501; i++)
+        if(!isPrime[i])
+            for(int j = 2; i * j < 501; i++)
+                isPrime[i*j] = true;
+
+    ios::sync_with_stdio(false);
+    cin.tie(NULL), cout.tie(NULL);
+
+    cin >> n;
+
+    for(int i = 2; i <= n; i++)
     {
-        cout << i << " " <<  Fac(i) << '\n';
+        int t = i;
+        while(t % 2 == 0)
+        {
+            x++;
+            t /= 2;
+        }
+        while(t % 5 == 0)
+        {
+            y++;
+            t /= 5;
+        }
     }
+    cout << ((x>y) ? y : x);
 }
