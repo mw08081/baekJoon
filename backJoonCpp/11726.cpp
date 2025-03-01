@@ -3,16 +3,12 @@ using namespace std;
 
 int main()
 {
-    int arr[11] = {0,1,2,4};
-    int T, n;
-    cin >> T;
+    int v;
+    cin >> v;
 
-    for (int i = 4; i < 11; i++)
-        arr[i] = arr[i-1] + arr[i-2] + arr[i-3];
-    
-    while(T--)
-    {
-        cin >> n;
-        cout << arr[n] <<'\n';
-    }
+    int dp[1001] = {0, 1, 2};
+    for(int j = 3; j <= v; j++)
+        dp[j] = (dp[j-1] + dp[j-2]) % 10007;
+
+    cout << dp[v];
 }
