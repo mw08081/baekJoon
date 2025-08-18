@@ -15,11 +15,7 @@ vector<int> solution(vector<int> answers) {
     
     for(int i = 0;i < answers.size(); i++){
         if(answers[i] == a[i%ai]) ac++;
-    }
-    for(int i = 0;i < answers.size(); i++){
         if(answers[i] == b[i%bi]) bc++;
-    }
-    for(int i = 0;i < answers.size(); i++){
         if(answers[i] == c[i%ci]) cc++;
     }
     
