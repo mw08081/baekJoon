@@ -2,7 +2,6 @@
 #include <vector>
 #include <unordered_map>
 #include <sstream>
-#include <iostream>
 
 using namespace std;
 
@@ -25,11 +24,12 @@ vector<string> solution(vector<string> record) {
     for(const auto& e : logs) {
         if(e.first == "Change") continue;
         
-        string action;
-        if(e.first == "Enter") action = "들어왔습니다.";
-        else if(e.first == "Leave") action = "나갔습니다.";
+        string res = m[e.second];
+        res += "님이 ";
+        if(e.first == "Enter") res += "들어왔습니다.";
+        else if(e.first == "Leave") res += "나갔습니다.";
         
-        answer.push_back(m[e.second] + "님이 " + action);
+        answer.push_back(res);
     }
     
     return answer;
