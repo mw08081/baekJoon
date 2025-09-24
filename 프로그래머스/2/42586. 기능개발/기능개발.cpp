@@ -5,12 +5,9 @@ using namespace std;
 
 vector<int> solution(vector<int> pgs, vector<int> spds) {
     vector<int> answer;
-    deque<int> d_pgs;
-    deque<int> d_spds;
-    
-    for(auto e : pgs) d_pgs.push_back(e);
-    for(auto e : spds) d_spds.push_back(e);
-    
+    deque<int> d_pgs(pgs.begin(), pgs.end());
+    deque<int> d_spds(spds.begin(), spds.end());
+        
     while(!d_pgs.empty()) {        
         int popCnt = 0;
         while(!d_pgs.empty() && d_pgs.front() >= 100) {
